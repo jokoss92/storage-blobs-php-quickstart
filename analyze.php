@@ -3,10 +3,10 @@ if (isset($_POST['submit'])) {
 	if (isset($_POST['url'])) {
 		$url = $_POST['url'];
 	} else {
-		header("Location: phpQS.php");
+		header("Location: index.php");
 	}
 } else {
-	header("Location: phpQS.php");
+	header("Location: index.php");
 }
 ?>
 
@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<title>Hasil Analisa</title>
+		<title>Analyze Result</title>
 		<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 		<!-- Bootstrap core CSS -->
 		<link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
 	</head>
 	
 	<body>
-				<h1>Hasil Analisa</h1>
+				<h1>Analyze Result</h1>
 				<script type="text/javascript">
 					$(document).ready(function () {
 						var subscriptionKey = "83a7bf97125b41688bc6a3c111d0d47c";
@@ -79,7 +79,7 @@ if (isset($_POST['submit'])) {
 				
 				<div id="wrapper" style="width:1020px; display:table;">
 					<div id="jsonOutput" style="width:600px; display:table-cell;">
-						<b>Response:</b><br><br>
+						<b>JSON Response:</b><br><br>
 						<textarea id="responseTextArea" class="UIInput"
 							  style="width:580px; height:400px;" readonly=""></textarea>
 					</div>
