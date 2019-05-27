@@ -63,25 +63,15 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<title>Analyze With Upload Photo</title>
+		<title>Azure Vision Test</title>
 		<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 		<!-- Bootstrap core CSS -->
 		<link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
-		<!-- Custom styles for this template -->
-		<link href="starter-template.css" rel="stylesheet">
-		 <style>
-       th {
-  	background-color:#707B7C; border-right:solid 1px green; border-bottom:solid 1px green; font-size:8pt ; padding:5px;font-family: arial;border-top: solid 1px green;border-left: solid 1px green;
-	} 
-	td{
-		border-right:solid 1px green; border-bottom:solid 1px green; font-size:8pt ; padding:5px;font-family: arial;border-left: solid 1px green;border-top: solid 1px green; text-align: right;  
-	}
-</style>
 	</head>
 	
 	<body>
 
-			Image to analyze:
+			<h1>Upload Image to Analyze:</h1>
 					<form action="index.php" method="post" enctype="multipart/form-data">
 						<input type="file" name="fileToUpload" accept=".jpeg,.jpg,.png" required="">
 						<input type="submit" name="submit" value="Upload">
@@ -106,7 +96,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 							<td>
 								<form action="analyze.php" method="post">
 									<input type="hidden" name="url" value="<?php echo $blob->getUrl()?>">						
-									<input type="submit" name="submit"  value="Lihat">
+									<input type="submit" name="submit"  value="Analyze">
 								</form>
 							</td>
 						</tr>

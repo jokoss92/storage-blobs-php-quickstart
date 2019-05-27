@@ -21,8 +21,6 @@ if (isset($_POST['submit'])) {
 		<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 		<!-- Bootstrap core CSS -->
 		<link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
-		<!-- Custom styles for this template -->
-		<link href="starter-template.css" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 	</head>
 	
@@ -87,6 +85,7 @@ if (isset($_POST['submit'])) {
 						<b>Source Image:</b><br><br>
 						<img id="sourceImage" width="400" /><br>
 						<h3 id="description">...</h3>
+						<button><a href="index.php">Back</a></button>
 					</div>
 				</div>
 	</body>
